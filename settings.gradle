@@ -1,0 +1,7 @@
+include ':app:blue_screen'
+include ':app:red_screen'
+include ':data'
+include ':domain'
+include ':app:base'
+include ':app'
+rootProject.name = "MMAC"
