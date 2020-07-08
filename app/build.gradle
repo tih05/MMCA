@@ -28,6 +28,7 @@ dependencies {
 
     implementation project(":domain")
     implementation project(":data")
+    implementation project(":app:base")
 
     implementation project(":app:red_screen")
     implementation project(":app:blue_screen")

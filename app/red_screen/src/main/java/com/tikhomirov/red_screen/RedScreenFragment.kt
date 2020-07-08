@@ -8,16 +8,16 @@ import com.tikhomirov.base.BaseFragment
 import com.tikhomirov.mmac.red_screen.R
 import kotlinx.android.synthetic.main.fragment_red_screen.*
 
-class RedScreenFragment: BaseFragment() {
+class RedScreenFragment : BaseFragment() {
 
     companion object {
         fun newInstance() = RedScreenFragment()
     }
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
+            inflater: LayoutInflater,
+            container: ViewGroup?,
+            savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_red_screen, container, false)
     }
@@ -28,6 +28,9 @@ class RedScreenFragment: BaseFragment() {
     }
 
     private fun setupListeners() {
-        btnGoToFragment.setOnClickListener { router.navigateTo(screenList.blue_screen) }
+        btnGoToFragment.setOnClickListener {
+            //router.navigateTo(screenList.openBlueScreen(24))
+            router.backTo(null)
+        }
     }
 }

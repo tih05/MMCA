@@ -13,5 +13,5 @@ android {
 }
 
 dependencies {
-   api project(":app:base")
+    implementation project(":app:base")
 }
